@@ -58,7 +58,10 @@ function App() {
       alert("Word Not Found");
     }
 
-    if (currWord === correctWord) {
+    console.log("currWord =",currWord)
+    console.log("correctWord =", correctWord.toUpperCase() )
+
+    if (currWord === correctWord.toUpperCase()) {
       setGameOver({ gameOver: true, guessedWord: true });
       return;
     }
